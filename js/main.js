@@ -14,8 +14,8 @@
     const sections      = document.querySelectorAll('.section');
     const galleryItems  = document.querySelectorAll('.gallery-item');
 
-    // ─── Chair Data for Variations ─────────────────────────
-    const chairData = {
+    // ─── Catalog Data for Variations ─────────────────────────
+    const catalogData = {
         'acojinada-cromada': {
             variants: {
                 'default': [
@@ -139,6 +139,94 @@
                     'img/sillas/sillaZintroPintada/sillaZintroPintadaVerde2.webp',
                     'img/sillas/sillaZintroPintada/sillaZintroPintadaVerde3.webp',
                     'img/sillas/sillaZintroPintada/sillaZintroPintadaVerde4.webp'
+                ]
+            }
+        },
+        // Mesas
+        'mesa-cuadrada': {
+            variants: {
+                'default': [
+                    'img/mesas/mesaCuadrada/mesaCuadrada1.webp',
+                    'img/mesas/mesaCuadrada/mesaCuadrada2.webp',
+                    'img/mesas/mesaCuadrada/mesaCuadrada3.webp',
+                    'img/mesas/mesaCuadrada/mesaCuadrada4.webp',
+                    'img/mesas/mesaCuadrada/mesaCuadrada5.webp'
+                ]
+            }
+        },
+        'mesa-imperial': {
+            variants: {
+                'default': [
+                    'img/mesas/mesaImperial/mesaImperial2.webp',
+                    'img/mesas/mesaImperial/mesaImperial3.webp',
+                    'img/mesas/mesaImperial/mesaImperial4.webp',
+                    'img/mesas/mesaImperial/mesaImperial5.webp',
+                    'img/mesas/mesaImperial/mesaImperialZintro1.webp'
+                ]
+            }
+        },
+        'mesa-imperial-zintro': {
+            variants: {
+                'default': [
+                    'img/mesas/mesaImperialZintro/mesaImperialZintro1.webp',
+                    'img/mesas/mesaImperialZintro/mesaImperialZintro2.webp',
+                    'img/mesas/mesaImperialZintro/mesaImperialZintro3.webp',
+                    'img/mesas/mesaImperialZintro/mesaImperialZintro4.webp',
+                    'img/mesas/mesaImperialZintro/mesaImperialZintro5.webp'
+                ]
+            }
+        },
+        'mesa-rectangular': {
+            variants: {
+                'default': [
+                    'img/mesas/mesaRectangular/mesaRectangular1.webp',
+                    'img/mesas/mesaRectangular/mesaRectangular2.webp',
+                    'img/mesas/mesaRectangular/mesaRectangular3.webp',
+                    'img/mesas/mesaRectangular/mesaRectangular4.webp',
+                    'img/mesas/mesaRectangular/mesaRectangular5.webp'
+                ]
+            }
+        },
+        'mesa-rectangular-chica': {
+            variants: {
+                'default': [
+                    'img/mesas/mesaRectangularChica/mesaRectangularChica1.webp',
+                    'img/mesas/mesaRectangularChica/mesaRectangularChica2.webp',
+                    'img/mesas/mesaRectangularChica/mesaRectangularChica3.webp',
+                    'img/mesas/mesaRectangularChica/mesaRectangularChica4.webp',
+                    'img/mesas/mesaRectangularChica/mesaRectangularChica5.webp'
+                ]
+            }
+        },
+        'mesa-redonda': {
+            variants: {
+                'default': [
+                    'img/mesas/mesaRedonda/mesaRedonda1.webp',
+                    'img/mesas/mesaRedonda/mesaRedonda2.webp',
+                    'img/mesas/mesaRedonda/mesaRedonda3.webp',
+                    'img/mesas/mesaRedonda/mesaRedonda4.webp',
+                    'img/mesas/mesaRedonda/mesaRedonda5.webp'
+                ]
+            }
+        },
+        'mesa-redonda-zintro': {
+            variants: {
+                'default': [
+                    'img/mesas/mesaRedondaZintro/mesaRedonda1.webp',
+                    'img/mesas/mesaRedondaZintro/mesaRedondaZintro2.webp',
+                    'img/mesas/mesaRedondaZintro/mesaRedondaZintro3.webp',
+                    'img/mesas/mesaRedondaZintro/mesaRedondaZintro4.webp',
+                    'img/mesas/mesaRedondaZintro/mesaRedondaZintro5.webp'
+                ]
+            }
+        },
+        'mesa-tablon': {
+            variants: {
+                'default': [
+                    'img/mesas/mesaTablon/mesaTablon1.webp',
+                    'img/mesas/mesaTablon/mesaTablon3.webp',
+                    'img/mesas/mesaTablon/mesaTablon4.webp',
+                    'img/mesas/mesaTablon/mesaTablon5.webp'
                 ]
             }
         }
@@ -270,7 +358,7 @@
             galleryItem.dataset.color = color;
 
             // Update main image preview
-            const firstImageSrc = chairData[model].variants[color][0];
+            const firstImageSrc = catalogData[model].variants[color][0];
             const imgEl = galleryItem.querySelector('img');
             
             // Small transition trick via inline style
@@ -293,9 +381,9 @@
     }
 
     function openCarousel(category, index, model, color) {
-        if (model && color && chairData[model]) {
-            // Context is from Sillas with data variants
-            images = chairData[model].variants[color];
+        if (model && color && catalogData[model]) {
+            // Context is from Sillas/Mesas with data variants
+            images = catalogData[model].variants[color];
             currentIndex = 0; // Always start at 1st image
         } else {
             // Context is from Mesas (or un-modeled items)
