@@ -14,6 +14,136 @@
     const sections      = document.querySelectorAll('.section');
     const galleryItems  = document.querySelectorAll('.gallery-item');
 
+    // ─── Chair Data for Variations ─────────────────────────
+    const chairData = {
+        'acojinada-cromada': {
+            variants: {
+                'default': [
+                    'img/sillas/sillaAcojinadaCromada/SillaAcojinadaCromada1.webp',
+                    'img/sillas/sillaAcojinadaCromada/SillaAcojinadaCromada2.webp',
+                    'img/sillas/sillaAcojinadaCromada/SillaAcojinadaCromada3.webp',
+                    'img/sillas/sillaAcojinadaCromada/SillaAcojinadaCromada4.webp'
+                ]
+            }
+        },
+        'acojinada-infantil': {
+            variants: {
+                'verde': [
+                    'img/sillas/sillaAcojinadaInfantil/sillaAcojinadaInfantilVerde1.webp',
+                    'img/sillas/sillaAcojinadaInfantil/sillaAcojinadaInfantilverde2.webp',
+                    'img/sillas/sillaAcojinadaInfantil/sillaAcojinadaInfantilVerde3.webp',
+                    'img/sillas/sillaAcojinadaInfantil/sillaAcojinadaInfantilVerde4.webp'
+                ],
+                'vino': [
+                    'img/sillas/sillaAcojinadaInfantil/sillaAcojinadaInfantilVino1.webp',
+                    'img/sillas/sillaAcojinadaInfantil/sillaAcojinadaInfantilVino2.webp',
+                    'img/sillas/sillaAcojinadaInfantil/sillaAcojinadaInfantilVino3.webp'
+                ]
+            }
+        },
+        'cromada': {
+            variants: {
+                'azul': [
+                    'img/sillas/sillaCromada/sillaCromadaAzul1.webp',
+                    'img/sillas/sillaCromada/sillaCromadaAzul2.webp',
+                    'img/sillas/sillaCromada/sillaCromadaAzul3.webp',
+                    'img/sillas/sillaCromada/sillaCromadaAzul4.webp'
+                ],
+                'rojo': [
+                    'img/sillas/sillaCromada/sillaCromadaRoja1.webp',
+                    'img/sillas/sillaCromada/sillaCromadaRoja2.webp',
+                    'img/sillas/sillaCromada/sillaCromadaRoja3.webp',
+                    'img/sillas/sillaCromada/sillaCromadaRoja4.webp'
+                ],
+                'verde': [
+                    'img/sillas/sillaCromada/SillaCromadaVerde1.webp',
+                    'img/sillas/sillaCromada/SillaCromadaVerde2.webp',
+                    'img/sillas/sillaCromada/SillaCromadaVerde3.webp',
+                    'img/sillas/sillaCromada/SillaCromadaVerde4.webp'
+                ]
+            }
+        },
+        'galvanizada': {
+            variants: {
+                'default': [
+                    'img/sillas/sillaGalbanizada/sillaGalbanizada1.webp',
+                    'img/sillas/sillaGalbanizada/sillaGalbanizada2.webp',
+                    'img/sillas/sillaGalbanizada/sillaGalvanizada3.webp',
+                    'img/sillas/sillaGalbanizada/sillaGalbanizada4.webp'
+                ]
+            }
+        },
+        'pintada': {
+            variants: {
+                'gris': [
+                    'img/sillas/sillaPintada/sillaPintadaGris1.webp',
+                    'img/sillas/sillaPintada/sillaPintadaGris2.webp',
+                    'img/sillas/sillaPintada/sillaPintadaGris3.webp',
+                    'img/sillas/sillaPintada/sillaPintadaGris4.webp'
+                ],
+                'rojo': [
+                    'img/sillas/sillaPintada/sillaPintadaRoja1.webp',
+                    'img/sillas/sillaPintada/sillaPintadaRoja2.webp',
+                    'img/sillas/sillaPintada/sillaPintadaRoja3.webp',
+                    'img/sillas/sillaPintada/sillaPintadaRoja4.webp'
+                ]
+            }
+        },
+        'plastico': {
+            variants: {
+                'default': [
+                    'img/sillas/sillaPlastico/sillaPlastico2.webp',
+                    'img/sillas/sillaPlastico/sillaPlastico3.webp',
+                    'img/sillas/sillaPlastico/sillaPlastico4.webp'
+                ]
+            }
+        },
+        'zintro-completa': {
+            variants: {
+                'default': [
+                    'img/sillas/sillaZintroCompleta/sillaZintroCompleta1.webp',
+                    'img/sillas/sillaZintroCompleta/sillaZintroCompleta2.webp',
+                    'img/sillas/sillaZintroCompleta/sillaZintroCompleta3.webp',
+                    'img/sillas/sillaZintroCompleta/sillaZintroCompleta4.webp'
+                ]
+            }
+        },
+        'zintro-pintada': {
+            variants: {
+                'amarillo': [
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaAmarilla1.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaAmarilla2.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaAmarilla3.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaAmarilla4.webp'
+                ],
+                'azul': [
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaAzul1.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaAzul2.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaAzul3.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaAzul4.webp'
+                ],
+                'blanco': [
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaBlanca1.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaBlanca2.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaBlanca3.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaBlanca4.webp'
+                ],
+                'negro': [
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaNegra1.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaNegra2.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaNegra3.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaNegra4.webp'
+                ],
+                'verde': [
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaVerde1.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaVerde2.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaVerde3.webp',
+                    'img/sillas/sillaZintroPintada/sillaZintroPintadaVerde4.webp'
+                ]
+            }
+        }
+    };
+
     // Carousel
     const modal         = document.getElementById('carousel-modal');
     const carouselImage = document.getElementById('carousel-image');
@@ -116,18 +246,63 @@
 
 
     /* ══════════════════════════════════════════════════
-       3. CAROUSEL / LIGHTBOX
+       3. CAROUSEL / LIGHTBOX & COLOR VARIANTS
        ══════════════════════════════════════════════════ */
+
+    // ── Color Variants Handling
+    const colorSwatches = document.querySelectorAll('.color-swatch');
+
+    colorSwatches.forEach(swatch => {
+        swatch.addEventListener('click', (e) => {
+            const model = swatch.dataset.model;
+            const color = swatch.dataset.color;
+            
+            // Update active state in siblings
+            const parent = swatch.closest('.color-swatches');
+            parent.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+            swatch.classList.add('active');
+
+            // Find the associated gallery item
+            const card = swatch.closest('.product-card');
+            const galleryItem = card.querySelector('.gallery-item');
+            
+            // Update the dataset on gallery item so the carousel opens the right images
+            galleryItem.dataset.color = color;
+
+            // Update main image preview
+            const firstImageSrc = chairData[model].variants[color][0];
+            const imgEl = galleryItem.querySelector('img');
+            
+            // Small transition trick via inline style
+            imgEl.style.transition = 'opacity 0.2s ease-out';
+            imgEl.style.opacity = '0';
+            setTimeout(() => {
+                imgEl.src = firstImageSrc;
+                imgEl.style.opacity = '1';
+                setTimeout(() => imgEl.style.transition = '', 200); // cleanup
+            }, 200);
+            
+            // Prevent event from bubbling and opening carousel
+            e.stopPropagation();
+        });
+    });
 
     function getImagesForCategory(category) {
         const items = document.querySelectorAll(`.gallery-item[data-category="${category}"]`);
         return Array.from(items).map(item => item.querySelector('img').src);
     }
 
-    function openCarousel(category, index) {
-        currentCategory = category;
-        images = getImagesForCategory(category);
-        currentIndex = index;
+    function openCarousel(category, index, model, color) {
+        if (model && color && chairData[model]) {
+            // Context is from Sillas with data variants
+            images = chairData[model].variants[color];
+            currentIndex = 0; // Always start at 1st image
+        } else {
+            // Context is from Mesas (or un-modeled items)
+            currentCategory = category;
+            images = getImagesForCategory(category);
+            currentIndex = index;
+        }
 
         updateCarouselImage();
         modal.classList.add('active');
@@ -160,8 +335,11 @@
     galleryItems.forEach(item => {
         item.addEventListener('click', () => {
             const category = item.dataset.category;
-            const index = parseInt(item.dataset.index, 10);
-            openCarousel(category, index);
+            const index = item.dataset.index ? parseInt(item.dataset.index, 10) : 0;
+            const model = item.dataset.model;
+            const color = item.dataset.color;
+            
+            openCarousel(category, index, model, color);
         });
     });
 
