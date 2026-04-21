@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo Lupita — Descubre nuestra exclusiva colección de sillas y mesas de alta calidad.">
+    <title>Catálogo Lupita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FIXED SIDEBAR NAVIGATION                    -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-brand">LP</div>
+        <ul class="sidebar-nav">
+            <li><a href="#inicio" class="nav-link active" data-section="inicio">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span>Inicio</span>
+            </a></li>
+            <li><a href="#sillas" class="nav-link" data-section="sillas">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11a2 2 0 012-2h10a2 2 0 012 2v4H5v-4z"/><path d="M4 15h16v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2z"/><path d="M7 19v2M17 19v2M5 9V7a2 2 0 012-2h10a2 2 0 012 2v2"/></svg>
+                <span>Sillas</span>
+            </a></li>
+            <li><a href="#mesas" class="nav-link" data-section="mesas">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v7M19 12v7M8 12v7M16 12v7"/></svg>
+                <span>Mesas</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile top bar -->
+    <header id="mobile-header" class="mobile-header">
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="mobile-brand">Catálogo Lupita</div>
+    </header>
+
+    <!-- Mobile overlay -->
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- MAIN CONTENT                                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <main id="main-content" class="main-content">
+
+        <!-- HERO / INICIO -->
+        <section id="inicio" class="section hero-section">
+            <div class="hero-inner">
+                <div class="hero-badge">Colección 2026</div>
+                <h1 class="hero-title">Catálogo<br><span class="hero-accent">Lupita</span></h1>
+                <p class="hero-subtitle">Muebles de diseño para espacios que inspiran</p>
+
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3 class="location-name">Sucursal Centro</h3>
+                        <p class="location-address">Av. Juárez #142, Col. Centro<br>Guadalajara, Jalisco</p>
+                        <a href="https://maps.google.com" target="_blank" class="location-link">
+                            Ver en mapa
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3 class="location-name">Sucursal Plaza del Sol</h3>
+                        <p class="location-address">Blvd. López Mateos #3456, Local 12<br>Zapopan, Jalisco</p>
+                        <a href="https://maps.google.com" target="_blank" class="location-link">
+                            Ver en mapa
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#sillas" class="cta-btn">
+                        Explorar Sillas
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+                    </a>
+                    <a href="#mesas" class="cta-btn cta-btn--outline">
+                        Explorar Mesas
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Decorative elements -->
+            <div class="hero-decoration hero-decoration--1"></div>
+            <div class="hero-decoration hero-decoration--2"></div>
+        </section>
+
+        <!-- SILLAS SECTION -->
+        <section id="sillas" class="section catalog-section">
+            <div class="section-header">
+                <div class="section-label">01</div>
+                <h2 class="section-title">Sillas</h2>
+                <p class="section-desc">Comodidad y estilo en cada detalle</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="gallery-grid" id="gallery-sillas">
+                <div class="gallery-item" data-index="0" data-category="sillas">
+                    <img src="img/sillas/silla_1.png" alt="Silla modelo 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="1" data-category="sillas">
+                    <img src="img/sillas/silla_2.png" alt="Silla modelo 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="2" data-category="sillas">
+                    <img src="img/sillas/silla_3.png" alt="Silla modelo 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="3" data-category="sillas">
+                    <img src="img/sillas/silla_4.png" alt="Silla modelo 4" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="4" data-category="sillas">
+                    <img src="img/sillas/silla_5.png" alt="Silla modelo 5" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="5" data-category="sillas">
+                    <img src="img/sillas/silla_6.png" alt="Silla modelo 6" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MESAS SECTION -->
+        <section id="mesas" class="section catalog-section">
+            <div class="section-header">
+                <div class="section-label">02</div>
+                <h2 class="section-title">Mesas</h2>
+                <p class="section-desc">Diseño funcional para cada espacio</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="gallery-grid" id="gallery-mesas">
+                <div class="gallery-item" data-index="0" data-category="mesas">
+                    <img src="img/mesas/mesa_1.png" alt="Mesa modelo 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="1" data-category="mesas">
+                    <img src="img/mesas/mesa_2.png" alt="Mesa modelo 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="2" data-category="mesas">
+                    <img src="img/mesas/mesa_3.png" alt="Mesa modelo 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="3" data-category="mesas">
+                    <img src="img/mesas/mesa_4.png" alt="Mesa modelo 4" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="4" data-category="mesas">
+                    <img src="img/mesas/mesa_5.png" alt="Mesa modelo 5" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="5" data-category="mesas">
+                    <img src="img/mesas/mesa_6.png" alt="Mesa modelo 6" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CAROUSEL / LIGHTBOX MODAL                   -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div id="carousel-modal" class="carousel-modal">
+        <div class="carousel-backdrop"></div>
+        <div class="carousel-container">
+            <!-- Close button -->
+            <button id="carousel-close" class="carousel-close" aria-label="Cerrar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+
+            <!-- Navigation arrows -->
+            <button id="carousel-prev" class="carousel-arrow carousel-arrow--prev" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button id="carousel-next" class="carousel-arrow carousel-arrow--next" aria-label="Siguiente">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg>
+            </button>
+
+            <!-- Image container with zoom -->
+            <div id="carousel-image-wrapper" class="carousel-image-wrapper">
+                <img id="carousel-image" class="carousel-image" src="" alt="Producto">
+            </div>
+
+            <!-- Counter -->
+            <div id="carousel-counter" class="carousel-counter">
+                <span id="carousel-current">1</span> / <span id="carousel-total">6</span>
+            </div>
+
+            <!-- Zoom hint -->
+            <div id="zoom-hint" class="zoom-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                Doble click para zoom
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
